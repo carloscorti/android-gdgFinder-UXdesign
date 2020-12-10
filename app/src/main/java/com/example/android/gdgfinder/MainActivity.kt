@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.home -> {
                     toolBar.setDisplayShowTitleEnabled(false)
                     binding.heroImage.visibility = View.VISIBLE
+                    binding.drawerLayout.closeDrawer(binding.navigationView)
                 }
                 else -> {
                     toolBar.setDisplayShowTitleEnabled(true)
